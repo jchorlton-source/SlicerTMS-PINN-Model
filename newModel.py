@@ -37,10 +37,6 @@ class PhysicsNeMoFNOModel(nn.Module):
         return out
 
 
-# Simplified approach - focus on FNO for now
-# DeepONet can be added later if needed
-
-
 # Main model class (using FNO)
 class PhysicsNeMoEFieldModel(nn.Module):
     def __init__(self, **kwargs):
