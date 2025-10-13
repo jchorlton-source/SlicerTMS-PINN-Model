@@ -1,5 +1,5 @@
 [project]
-name = "Thesis Project"
+name = "Thesis_Project"
 version = "0.1.0"
 description = "PINN for SlicerTMS"
 readme = "README.md"
