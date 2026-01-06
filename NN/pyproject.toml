@@ -1,13 +1,13 @@
 [project]
-name = "Thesis_Project"
+name = "nn"
 version = "0.1.0"
-description = "PINN for SlicerTMS"
+description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "nibabel>=5.3.2",
-    "numpy>=2.3.2",
+    "numpy>=2.3.3",
+    "nvidia-physicsnemo>=1.2.0",
     "torch>=2.8.0",
     "tqdm>=4.67.1",
-    "nvidia-physicsnemo>=0.2.0",
 ]
