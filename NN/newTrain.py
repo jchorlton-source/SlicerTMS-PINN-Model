@@ -7,8 +7,8 @@ import torch.optim as optim
 import torch.nn.functional as F
 from torch.amp import autocast, GradScaler
 from tqdm import tqdm
-from newModel import PhysicsNeMoEFieldModel
-from newDataset import make_dataloaders
+from NN.newModel import PhysicsNeMoEFieldModel
+from NN.newDataset import make_dataloaders
 
 class WeightedMSELoss(nn.Module):
   def __init__(self, weight=None):
