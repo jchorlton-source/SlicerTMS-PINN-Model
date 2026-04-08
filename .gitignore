@@ -1,0 +1,10 @@
+#slicer
+/SlicerTMS/
+/Slicer-5.8.1-linux-amd64/
+
+#vsc
+.vscode/
+
+#data
+/DataCreation/m2m_ernie/
+/DataCreation/simOutput/
