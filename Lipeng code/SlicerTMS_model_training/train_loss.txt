@@ -1,0 +1,77 @@
+{'start time': '2022-09-19 21:49:55.835901'}
+{'start time': '2022-09-19 21:58:27.191589'}
+{'start time': '2022-09-19 22:08:03.241903'}
+{'start time': '2022-09-19 22:10:25.001362'}
+{'start time': '2022-09-19 22:11:35.988768'}
+{'start time': '2022-09-19 22:13:32.977856'}
+{'start time': '2022-09-19 22:20:32.592763'}
+{'start time': '2022-09-19 22:23:18.358732'}
+{'start time': '2022-09-19 22:26:12.045514'}
+{'start time': '2022-09-19 22:35:56.186579'}
+{'start time': '2022-09-19 22:37:59.747405'}
+{'start time': '2022-09-19 22:51:40.674242'}
+{'start time': '2022-09-19 22:56:30.271939'}
+{'start time': '2022-09-19 22:57:57.275331'}
+{'start time': '2022-09-19 22:59:14.853366'}
+{'start time': '2022-09-19 23:02:25.533995'}
+{'start time': '2022-09-19 23:04:33.469937'}
+{'iter_number': 10, 'train_loss': [1537367.375, 2359827.25, 2863337.25, 1316702.5, 3470831.0, 2515052.5, 2845141.5, 2686367.75, 2573150.5, nan]}
+{'iter_number': 20, 'train_loss': [2960780.0, 2626470.5, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 30, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 40, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 50, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 60, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 70, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 80, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 90, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 100, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 110, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 120, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 130, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'start time': '2022-09-19 23:07:24.654215'}
+{'iter_number': 10, 'train_loss': [3044650.5, 2530921.5, 2886155.75, 2336897.0, 2946399.5, 2439471.5, 3658667.75, 1965746.875, 3013027.5, 2631644.0]}
+{'start time': '2022-09-19 23:08:35.582017'}
+{'iter_number': 10, 'train_loss': [3113480.25, 2233184.25, 3907609.0, nan, 1856654.5, 2180598.25, 6156144.5, 2942445.5, 3422028.25, 2121763.25]}
+{'iter_number': 20, 'train_loss': [2310593.25, 3623379.25, 2898502.75, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 30, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 40, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 50, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 60, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 70, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 80, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 90, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 100, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'start time': '2022-09-19 23:12:19.726666'}
+{'iter_number': 10, 'train_loss': [2658437.0, 2254609.0, 1988961.625, 2874608.75, 3400119.5, 2206041.0, 2225260.5, 3125109.5, 2931317.0, 2572941.25]}
+{'iter_number': 20, 'train_loss': [4764469.0, 4790727.0, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 30, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 40, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 50, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 60, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 70, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 80, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 90, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 100, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 110, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'iter_number': 120, 'train_loss': [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]}
+{'start time': '2022-09-20 09:30:11.520915'}
+{'iter_number': 10, 'train_loss': [277.93560791015625, 308.5296325683594, 285.5381774902344, 144.04713439941406, 308.5732421875, 375.5270080566406, 179.2272491455078, 250.37840270996094, 259.0575866699219, 397.6807861328125]}
+{'iter_number': 20, 'train_loss': [333.123046875, 208.17971801757812, 73.7910385131836, 568.9068603515625, 394.5162658691406, 218.96286010742188, 154.05511474609375, 216.57049560546875, 194.1636505126953, 246.03030395507812]}
+{'iter_number': 30, 'train_loss': [209.50003051757812, 241.01345825195312, 179.41378784179688, 317.7641906738281, 166.13844299316406, 273.3352966308594, 189.1199951171875, 521.0001220703125, 106.23287963867188, 233.20628356933594]}
+{'iter_number': 40, 'train_loss': [310.5640869140625, 357.0685729980469, 306.33544921875, 237.71136474609375, 64.71629333496094, 147.6085968017578, 213.8898468017578, 114.18507385253906, 242.81178283691406, 61.01776885986328]}
+{'iter_number': 50, 'train_loss': [196.7655487060547, 241.35658264160156, 151.17626953125, 325.0873107910156, 110.75546264648438, 248.81460571289062, 243.277099609375, 432.61077880859375, 406.33685302734375, 161.0714111328125]}
+{'iter_number': 60, 'train_loss': [184.4960479736328, 181.1701202392578, 255.34266662597656, 251.2959442138672, 184.01116943359375, 162.00730895996094, 124.8763656616211, 57.625450134277344, 517.7305297851562, 325.00628662109375]}
+{'iter_number': 70, 'train_loss': [238.27320861816406, 274.3770751953125, 157.99411010742188, 201.83218383789062, 140.29486083984375, 207.7286376953125, 113.09410858154297, 229.19325256347656, 121.34703826904297, 170.21615600585938]}
+{'iter_number': 80, 'train_loss': [273.8920593261719, 150.89068603515625, 281.1324157714844, 194.96412658691406, 268.8310241699219, 321.9502868652344, 180.26156616210938, 252.2161865234375, 267.7320556640625, 262.787109375]}
+{'iter_number': 90, 'train_loss': [245.9445343017578, 296.54217529296875, 158.7283172607422, 179.6461181640625, 267.5872497558594, 196.69947814941406, 206.73484802246094, 101.52128601074219, 210.9066925048828, 208.23304748535156]}
+{'start time': '2022-09-20 09:32:01.984415'}
+{'start time': '2022-09-20 09:33:11.127464'}
+{'iter_number': 10, 'train_loss': [293.7523498535156, 249.7418212890625, 254.8927764892578, 243.2496337890625, 236.32984924316406, 284.1481018066406, 284.3272705078125, 275.5155334472656, 275.45703125, 289.95465087890625]}
+{'iter_number': 20, 'train_loss': [247.099853515625, 206.20953369140625, 223.63983154296875, 255.30511474609375, 206.6137237548828, 293.42120361328125, 247.80145263671875, 222.89381408691406, 256.7423095703125, 283.47650146484375]}
+{'iter_number': 30, 'train_loss': [284.8449401855469, 197.22157287597656, 235.1567840576172, 274.47607421875, 273.5867614746094, 229.36622619628906, 244.4990997314453, 208.17115783691406, 178.9436492919922, 225.51197814941406]}
+{'iter_number': 40, 'train_loss': [222.10427856445312, 206.26141357421875, 239.43190002441406, 208.1006622314453, 225.76612854003906, 258.3363952636719, 202.118896484375, 230.9317169189453, 199.0454559326172, 211.89529418945312]}
+{'start time': '2022-09-20 09:37:27.770363'}
+{'start time': '2022-09-20 10:48:17.647207'}
+{'start time': '2022-09-20 14:00:03.779405'}
+{'start time': '2022-09-20 14:01:30.684792'}
+{'start time': '2022-09-20 14:12:20.005936'}

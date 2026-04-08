@@ -1,8 +1,9 @@
 import os
+import numpy as np
 import torch
 import nibabel as nib
-import numpy as np
 from torch.utils.data import Dataset, DataLoader, random_split
+from torch.utils.data.distributed import DistributedSampler
 
 # Fixed filenames inside every subject_volumes/ folder
 DADT_FILENAME   = 'ernie_TMS_1-0001_Magstim_70mm_Fig8_scalar_D.nii.gz'
@@ -61,21 +62,14 @@ class EFieldDataset(Dataset):
         return (dadt, cond), efield
 
 
-def make_dataloaders(sim_output_dir, batch_size=4, num_workers=8, split_ratio=0.8):
+def make_dataloaders(sim_output_dir, batch_size=4, num_workers=8,
+                     split_ratio=0.8, distributed=False, rank=0, world_size=1):
     """
     Walks simOutput/<idx>_<pos>_<dir>/subject_volumes/ for each simulation
     and collects the fixed-name dadt, cond, and efield NIfTI files.
 
-    Expected structure:
-        simOutput/
-            0_Fp1_Fz/
-                subject_volumes/
-                    ernie_TMS_1-0001_Magstim_70mm_Fig8_scalar_D.nii.gz
-                    ernie_TMS_1-0001_Magstim_70mm_Fig8_scalar_conductivity.nii.gz
-                    ernie_TMS_1-0001_Magstim_70mm_Fig8_scalar_E.nii.gz
-            1_Fp1_AF3/
-                subject_volumes/
-                    ...
+    If distributed=True, uses DistributedSampler so each GPU processes
+    a different subset of the data.
     """
     if not os.path.isdir(sim_output_dir):
         raise FileNotFoundError(f"simOutput directory not found: {sim_output_dir}")
@@ -101,12 +95,13 @@ def make_dataloaders(sim_output_dir, batch_size=4, num_workers=8, split_ratio=0.
         else:
             missing.append(subdir)
 
-    if missing:
+    if missing and rank == 0:
         print(f"[WARNING] {len(missing)} simulations missing files. "
               f"First few: {missing[:5]}")
 
-    print(f"[INFO] Matched {len(matched_dadt)} complete samples "
-          f"({len(missing)} skipped)")
+    if rank == 0:
+        print(f"[INFO] Matched {len(matched_dadt)} complete samples "
+              f"({len(missing)} skipped)")
 
     if len(matched_dadt) == 0:
         raise RuntimeError(
@@ -118,29 +113,56 @@ def make_dataloaders(sim_output_dir, batch_size=4, num_workers=8, split_ratio=0.
     train_len = int(len(dataset) * split_ratio)
     val_len   = len(dataset) - train_len
 
-    # Fixed seed ensures same split every run
+    # Fixed seed ensures same split every run across all ranks
     train_set, val_set = random_split(
         dataset, [train_len, val_len],
         generator=torch.Generator().manual_seed(42)
     )
 
-    print(f"[INFO] Train samples: {train_len} | Val samples: {val_len}")
+    if rank == 0:
+        print(f"[INFO] Train samples: {train_len} | Val samples: {val_len}")
 
-    train_loader = DataLoader(
-        train_set,
-        batch_size=batch_size,
-        shuffle=True,
-        num_workers=num_workers,
-        pin_memory=True,
-        persistent_workers=True
-    )
-    val_loader = DataLoader(
-        val_set,
-        batch_size=batch_size,
-        shuffle=False,
-        num_workers=num_workers,
-        pin_memory=True,
-        persistent_workers=True
-    )
+    if distributed:
+        # Each GPU gets a different subset of data — no overlap
+        train_sampler = DistributedSampler(
+            train_set, num_replicas=world_size, rank=rank, shuffle=True
+        )
+        val_sampler = DistributedSampler(
+            val_set, num_replicas=world_size, rank=rank, shuffle=False
+        )
+        train_loader = DataLoader(
+            train_set,
+            batch_size=batch_size,
+            sampler=train_sampler,      # replaces shuffle=True
+            num_workers=num_workers,
+            pin_memory=True,
+            persistent_workers=True
+        )
+        val_loader = DataLoader(
+            val_set,
+            batch_size=batch_size,
+            sampler=val_sampler,
+            num_workers=num_workers,
+            pin_memory=True,
+            persistent_workers=True
+        )
+        return train_loader, val_loader, train_sampler
 
-    return train_loader, val_loader
+    else:
+        train_loader = DataLoader(
+            train_set,
+            batch_size=batch_size,
+            shuffle=True,
+            num_workers=num_workers,
+            pin_memory=True,
+            persistent_workers=True
+        )
+        val_loader = DataLoader(
+            val_set,
+            batch_size=batch_size,
+            shuffle=False,
+            num_workers=num_workers,
+            pin_memory=True,
+            persistent_workers=True
+        )
+        return train_loader, val_loader, None
