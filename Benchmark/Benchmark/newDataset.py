@@ -22,6 +22,16 @@ def center_crop_3d(volume, crop_size):
 
 
 class EFieldDataset(Dataset):
+    """
+    Loads dadt / conductivity / efield NIfTI volumes, crops to 128^3,
+    and returns ((dadt, cond), efield).
+
+    NOTE: For best throughput, pre-convert NIfTIs to uncompressed .pt or .npz
+    once (already cropped to 128^3). gzip decompression of .nii.gz is slow
+    and single-threaded; doing it every epoch is usually the IO bottleneck
+    on multi-H100 setups.
+    """
+
     def __init__(self, dadt_files, cond_files, efield_files, transform=None):
         self.dadt_files   = dadt_files
         self.cond_files   = cond_files
@@ -36,19 +46,23 @@ class EFieldDataset(Dataset):
         return len(self.dadt_files)
 
     def load_nifti(self, path):
-        data = nib.load(path).get_fdata()
-        data = np.nan_to_num(data)
-        return data.astype(np.float32)
+        data = nib.load(path).get_fdata(dtype=np.float32)
+        # nan_to_num on float32 in place avoids an extra allocation
+        np.nan_to_num(data, copy=False)
+        return data
 
     def __getitem__(self, idx):
         dadt   = self.load_nifti(self.dadt_files[idx])
         cond   = self.load_nifti(self.cond_files[idx])
         efield = self.load_nifti(self.efield_files[idx])
 
-        # Rearrange axes: from (D, H, W, C) to (C, D, H, W)
-        dadt   = torch.tensor(dadt).permute(3, 0, 1, 2)         # (3, D, H, W)
-        cond   = torch.tensor(np.squeeze(cond)).unsqueeze(0)     # (1, D, H, W)
-        efield = torch.tensor(efield).permute(3, 0, 1, 2)       # (3, D, H, W)
+        # Use from_numpy to avoid a copy (shares memory with the np array).
+        # Rearrange axes from (D, H, W, C) -> (C, D, H, W).
+        # .contiguous() ensures the permuted tensor is in standard layout
+        # before we crop and hand it to pin_memory.
+        dadt   = torch.from_numpy(dadt).permute(3, 0, 1, 2).contiguous()       # (3, D, H, W)
+        cond   = torch.from_numpy(np.squeeze(cond)).unsqueeze(0).contiguous()  # (1, D, H, W)
+        efield = torch.from_numpy(efield).permute(3, 0, 1, 2).contiguous()     # (3, D, H, W)
 
         # Center crop to fixed 128^3
         crop_size = (128, 128, 128)
@@ -63,7 +77,8 @@ class EFieldDataset(Dataset):
 
 
 def make_dataloaders(sim_output_dir, batch_size=4, num_workers=8,
-                     split_ratio=0.8, distributed=False, rank=0, world_size=1):
+                     split_ratio=0.8, distributed=False, rank=0, world_size=1,
+                     prefetch_factor=4):
     """
     Walks simOutput/<idx>_<pos>_<dir>/subject_volumes/ for each simulation
     and collects the fixed-name dadt, cond, and efield NIfTI files.
@@ -122,29 +137,36 @@ def make_dataloaders(sim_output_dir, batch_size=4, num_workers=8,
     if rank == 0:
         print(f"[INFO] Train samples: {train_len} | Val samples: {val_len}")
 
+    common_loader_kwargs = dict(
+        num_workers=num_workers,
+        pin_memory=True,
+        persistent_workers=(num_workers > 0),
+        prefetch_factor=prefetch_factor if num_workers > 0 else None,
+    )
+
     if distributed:
         # Each GPU gets a different subset of data — no overlap
         train_sampler = DistributedSampler(
-            train_set, num_replicas=world_size, rank=rank, shuffle=True
+            train_set, num_replicas=world_size, rank=rank, shuffle=True,
+            drop_last=True,  # ensures equal step count per rank
         )
         val_sampler = DistributedSampler(
-            val_set, num_replicas=world_size, rank=rank, shuffle=False
+            val_set, num_replicas=world_size, rank=rank, shuffle=False,
+            drop_last=False,
         )
         train_loader = DataLoader(
             train_set,
             batch_size=batch_size,
             sampler=train_sampler,      # replaces shuffle=True
-            num_workers=num_workers,
-            pin_memory=True,
-            persistent_workers=True
+            drop_last=True,
+            **common_loader_kwargs,
         )
         val_loader = DataLoader(
             val_set,
             batch_size=batch_size,
             sampler=val_sampler,
-            num_workers=num_workers,
-            pin_memory=True,
-            persistent_workers=True
+            drop_last=False,
+            **common_loader_kwargs,
         )
         return train_loader, val_loader, train_sampler
 
@@ -153,16 +175,14 @@ def make_dataloaders(sim_output_dir, batch_size=4, num_workers=8,
             train_set,
             batch_size=batch_size,
             shuffle=True,
-            num_workers=num_workers,
-            pin_memory=True,
-            persistent_workers=True
+            drop_last=True,
+            **common_loader_kwargs,
         )
         val_loader = DataLoader(
             val_set,
             batch_size=batch_size,
             shuffle=False,
-            num_workers=num_workers,
-            pin_memory=True,
-            persistent_workers=True
+            drop_last=False,
+            **common_loader_kwargs,
         )
         return train_loader, val_loader, None
