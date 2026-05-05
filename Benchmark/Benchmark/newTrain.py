@@ -607,5 +607,5 @@ if __name__ == "__main__":
         plateau_epochs = 45,       # epochs 6-50 at peak LR
         base_channels  = 32,
         ema_decay      = 0.999,
-        use_compile    = True,     # disable if "misaligned address" returns at base=32
+        use_compile    = False,     # disable if "misaligned address" returns at base=32
     )
