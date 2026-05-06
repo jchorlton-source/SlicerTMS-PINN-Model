@@ -1,0 +1,22 @@
+## This is a guide on installing SlicerTMS on linux. Linux mint (Ubuntu based) was the flavour of linux used but it should work for other distros
+
+[1] Install 3d Slicer from https://download.slicer.org/
+
+[2] Clone SlicerTMS to your local machine: https://github.com/lorifranke/SlicerTMS.git
+- If you dont know how to do this, keep reading. If you do, continue to next step.
+-- If you dont have git, open a terminal and run apt install git
+-- After getting git, in a terminal run git clone https://github.com/lorifranke/SlicerTMS.git . This will clone slicertms to wherever the terminal is located, usually your home directory
+
+[3] Install SlicerTMS to 3D Slicer. Open 3D slicer and go to edit>Application Settings. Go into the Developer tab and tick the "Enable developer mode" box. Then restart 3D Slicer.
+- Go back into application settings and go to Modules. Open the folder that contains your clone of SlicerTMS and go to SlicerTMS>client. Drag the folder located here named SlicerTMS into the "Additional Module Paths" box on 3DSlicer. It should appear in the box. Restart 3Dslicer.
+
+[4] In the 3D Slicer extension manager, install OpenIGTLinkIF and SlicerDMRI and all dependancies. Close 3DSlicer.
+
+[5] In your cloned SlicerTMS, in the folder 'data' there is an example called Example1. At the time of writing, this does not work due to githubs download limits. download Example4 from this link: https://drive.google.com/drive/folders/1B5km0f9KaJ622DLrdA2nTg-NmOrpbkeS?usp=drive_link and drag and drop it into the data folder.
+
+[6] Now you have to setup a python virtual environment to run the example. If you know how to do this already, the environment requires vtk pyigtl and nibabel . If you dont know, keep reading.
+-- I will setup the environment using uv as i feel it is the easiest way. open a terminal and run apt install uv .
+-- Navigate to the server folder in SlicerTMS and run uv venv . Then run uv pip install vtk pyigtl nibabel .
+
+[7] MAKE SURE 3DSLICER IS CLOSED. To run the example, activate the python environment if you made it yourself, if using the uv method, navigate to the server folder where you made the environment and run uv run server.py Example4 . It will prompt you to open 3DSlicer. When opened, click on the "Welcome to SLicer" box at the top, go down to TMS, and click Slicer TMS Module. Then, click the load example box on the right.
+
