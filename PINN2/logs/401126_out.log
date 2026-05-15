@@ -1,0 +1,374 @@
+Master:    k178
+Nodes:     k178
+Tasks:     2
+CPUs/task: 16
+[INFO] Using 2 GPUs
+[INFO] base_channels: 32
+[INFO] Effective batch size: 8
+[INFO] Effective LR: 2.83e-04
+[INFO] LR schedule: warmup 5 → plateau 45 → cosine 50  (total 100)
+[INFO] Matched 3844 complete samples (0 skipped)
+[INFO] Train samples: 3075 | Val samples: 769
+[INFO] Starting training from scratch
+
+Epoch 1/100  (lr: 2.83e-05)
+  Train Loss: 0.011034 | Val Loss (EMA): 0.024398 | Rel L2: 1.271645e+00 | data: 8.6987e-03 | cont: 2.9883e-04 | curl: 5.3546e-03 | Time: 359.47s
+  Saved best EMA weights
+
+Epoch 2/100  (lr: 7.92e-05)
+  Train Loss: 0.004230 | Val Loss (EMA): 0.009475 | Rel L2: 7.720681e-01 | data: 2.8257e-03 | cont: 1.6647e-04 | curl: 3.2836e-03 | Time: 356.40s
+  Saved best EMA weights
+
+Epoch 3/100  (lr: 1.30e-04)
+  Train Loss: 0.002553 | Val Loss (EMA): 0.005104 | Rel L2: 5.410797e-01 | data: 1.4911e-03 | cont: 1.7745e-04 | curl: 2.8349e-03 | Time: 357.35s
+  Saved best EMA weights
+
+Epoch 4/100  (lr: 1.81e-04)
+  Train Loss: 0.002061 | Val Loss (EMA): 0.003202 | Rel L2: 3.911773e-01 | data: 1.1850e-03 | cont: 1.8004e-04 | curl: 2.5439e-03 | Time: 355.68s
+  Saved best EMA weights
+
+Epoch 5/100  (lr: 2.32e-04)
+  Train Loss: 0.001772 | Val Loss (EMA): 0.002194 | Rel L2: 3.032712e-01 | data: 1.0021e-03 | cont: 1.8139e-04 | curl: 2.3646e-03 | Time: 359.46s
+  Saved best EMA weights
+
+Epoch 6/100  (lr: 2.83e-04)
+  Train Loss: 0.001595 | Val Loss (EMA): 0.001687 | Rel L2: 2.585632e-01 | data: 8.8980e-04 | cont: 1.8248e-04 | curl: 2.2695e-03 | Time: 358.82s
+  Saved best EMA weights
+
+Epoch 7/100  (lr: 2.83e-04)
+  Train Loss: 0.001262 | Val Loss (EMA): 0.001346 | Rel L2: 2.243999e-01 | data: 6.4090e-04 | cont: 1.8563e-04 | curl: 2.2365e-03 | Time: 357.65s
+  Saved best EMA weights
+
+Epoch 8/100  (lr: 2.83e-04)
+  Train Loss: 0.001201 | Val Loss (EMA): 0.001144 | Rel L2: 2.038694e-01 | data: 5.9589e-04 | cont: 1.8596e-04 | curl: 2.2256e-03 | Time: 356.26s
+  Saved best EMA weights
+
+Epoch 9/100  (lr: 2.83e-04)
+  Train Loss: 0.001092 | Val Loss (EMA): 0.001005 | Rel L2: 1.892646e-01 | data: 5.2163e-04 | cont: 1.8669e-04 | curl: 2.2260e-03 | Time: 356.61s
+  Saved best EMA weights
+
+Epoch 10/100  (lr: 2.83e-04)
+  Train Loss: 0.000981 | Val Loss (EMA): 0.000903 | Rel L2: 1.762409e-01 | data: 4.5513e-04 | cont: 1.8736e-04 | curl: 2.2318e-03 | Time: 359.33s
+  Saved best EMA weights
+
+Epoch 11/100  (lr: 2.83e-04)
+  Train Loss: 0.000965 | Val Loss (EMA): 0.000836 | Rel L2: 1.681764e-01 | data: 4.5922e-04 | cont: 1.8649e-04 | curl: 2.2363e-03 | Time: 356.66s
+  Saved best EMA weights
+
+Epoch 12/100  (lr: 2.83e-04)
+  Train Loss: 0.000869 | Val Loss (EMA): 0.000761 | Rel L2: 1.606629e-01 | data: 3.9296e-04 | cont: 1.8704e-04 | curl: 2.2414e-03 | Time: 358.49s
+  Saved best EMA weights
+
+Epoch 13/100  (lr: 2.83e-04)
+  Train Loss: 0.000857 | Val Loss (EMA): 0.000709 | Rel L2: 1.524199e-01 | data: 3.9062e-04 | cont: 1.8672e-04 | curl: 2.2500e-03 | Time: 357.74s
+  Saved best EMA weights
+
+Epoch 14/100  (lr: 2.83e-04)
+  Train Loss: 0.000806 | Val Loss (EMA): 0.000666 | Rel L2: 1.455793e-01 | data: 3.5838e-04 | cont: 1.8707e-04 | curl: 2.2553e-03 | Time: 359.36s
+  Saved best EMA weights
+
+Epoch 15/100  (lr: 2.83e-04)
+  Train Loss: 0.000750 | Val Loss (EMA): 0.000638 | Rel L2: 1.384698e-01 | data: 3.1821e-04 | cont: 1.8769e-04 | curl: 2.2640e-03 | Time: 357.91s
+  Saved best EMA weights
+
+Epoch 16/100  (lr: 2.83e-04)
+  Train Loss: 0.000767 | Val Loss (EMA): 0.000599 | Rel L2: 1.337467e-01 | data: 3.3820e-04 | cont: 1.8734e-04 | curl: 2.2640e-03 | Time: 357.67s
+  Saved best EMA weights
+
+Epoch 17/100  (lr: 2.83e-04)
+  Train Loss: 0.000726 | Val Loss (EMA): 0.000573 | Rel L2: 1.283087e-01 | data: 3.0272e-04 | cont: 1.8788e-04 | curl: 2.2679e-03 | Time: 357.11s
+  Saved best EMA weights
+
+Epoch 18/100  (lr: 2.83e-04)
+  Train Loss: 0.000726 | Val Loss (EMA): 0.000559 | Rel L2: 1.242213e-01 | data: 3.0923e-04 | cont: 1.8765e-04 | curl: 2.2729e-03 | Time: 358.16s
+  Saved best EMA weights
+
+Epoch 19/100  (lr: 2.83e-04)
+  Train Loss: 0.000682 | Val Loss (EMA): 0.000550 | Rel L2: 1.213149e-01 | data: 2.7529e-04 | cont: 1.8820e-04 | curl: 2.2767e-03 | Time: 359.32s
+  Saved best EMA weights
+
+Epoch 20/100  (lr: 2.83e-04)
+  Train Loss: 0.000682 | Val Loss (EMA): 0.000535 | Rel L2: 1.189354e-01 | data: 2.7989e-04 | cont: 1.8816e-04 | curl: 2.2824e-03 | Time: 357.13s
+  Saved best EMA weights
+
+Epoch 21/100  (lr: 2.83e-04)
+  Train Loss: 0.000628 | Val Loss (EMA): 0.000517 | Rel L2: 1.150801e-01 | data: 2.4218e-04 | cont: 1.8893e-04 | curl: 2.2908e-03 | Time: 359.26s
+  Saved best EMA weights
+
+Epoch 22/100  (lr: 2.83e-04)
+  Train Loss: 0.000632 | Val Loss (EMA): 0.000502 | Rel L2: 1.123602e-01 | data: 2.4734e-04 | cont: 1.8893e-04 | curl: 2.2938e-03 | Time: 357.48s
+  Saved best EMA weights
+
+Epoch 23/100  (lr: 2.83e-04)
+  Train Loss: 0.000605 | Val Loss (EMA): 0.000489 | Rel L2: 1.098620e-01 | data: 2.2677e-04 | cont: 1.8901e-04 | curl: 2.2971e-03 | Time: 359.80s
+  Saved best EMA weights
+
+Epoch 24/100  (lr: 2.83e-04)
+  Train Loss: 0.000640 | Val Loss (EMA): 0.000474 | Rel L2: 1.082582e-01 | data: 2.5757e-04 | cont: 1.8868e-04 | curl: 2.2944e-03 | Time: 360.40s
+  Saved best EMA weights
+
+Epoch 25/100  (lr: 2.83e-04)
+  Train Loss: 0.000584 | Val Loss (EMA): 0.000471 | Rel L2: 1.056367e-01 | data: 2.1449e-04 | cont: 1.8916e-04 | curl: 2.3023e-03 | Time: 359.12s
+  Saved best EMA weights
+
+Epoch 26/100  (lr: 2.83e-04)
+  Train Loss: 0.000557 | Val Loss (EMA): 0.000458 | Rel L2: 1.033121e-01 | data: 1.9456e-04 | cont: 1.8975e-04 | curl: 2.3070e-03 | Time: 357.37s
+  Saved best EMA weights
+
+Epoch 27/100  (lr: 2.83e-04)
+  Train Loss: 0.000607 | Val Loss (EMA): 0.000447 | Rel L2: 1.020035e-01 | data: 2.3765e-04 | cont: 1.8893e-04 | curl: 2.3038e-03 | Time: 356.20s
+  Saved best EMA weights
+
+Epoch 28/100  (lr: 2.83e-04)
+  Train Loss: 0.000546 | Val Loss (EMA): 0.000444 | Rel L2: 1.001296e-01 | data: 1.8709e-04 | cont: 1.8971e-04 | curl: 2.3109e-03 | Time: 357.42s
+  Saved best EMA weights
+
+Epoch 29/100  (lr: 2.83e-04)
+  Train Loss: 0.000547 | Val Loss (EMA): 0.000438 | Rel L2: 9.885211e-02 | data: 1.9565e-04 | cont: 1.8950e-04 | curl: 2.3147e-03 | Time: 368.61s
+  Saved best EMA weights
+
+Epoch 30/100  (lr: 2.83e-04)
+  Train Loss: 0.000538 | Val Loss (EMA): 0.000430 | Rel L2: 9.806596e-02 | data: 1.8348e-04 | cont: 1.8964e-04 | curl: 2.3154e-03 | Time: 367.11s
+  Saved best EMA weights
+
+Epoch 31/100  (lr: 2.83e-04)
+  Train Loss: 0.000533 | Val Loss (EMA): 0.000422 | Rel L2: 9.550811e-02 | data: 1.8621e-04 | cont: 1.8967e-04 | curl: 2.3155e-03 | Time: 377.62s
+  Saved best EMA weights
+
+Epoch 32/100  (lr: 2.83e-04)
+  Train Loss: 0.000550 | Val Loss (EMA): 0.000425 | Rel L2: 9.546322e-02 | data: 2.0123e-04 | cont: 1.8941e-04 | curl: 2.3137e-03 | Time: 378.68s
+
+Epoch 33/100  (lr: 2.83e-04)
+  Train Loss: 0.000479 | Val Loss (EMA): 0.000414 | Rel L2: 9.392190e-02 | data: 1.5048e-04 | cont: 1.8994e-04 | curl: 2.3248e-03 | Time: 372.20s
+  Saved best EMA weights
+
+Epoch 34/100  (lr: 2.83e-04)
+  Train Loss: 0.000531 | Val Loss (EMA): 0.000414 | Rel L2: 9.282692e-02 | data: 1.9269e-04 | cont: 1.8950e-04 | curl: 2.3223e-03 | Time: 375.99s
+  Saved best EMA weights
+
+Epoch 35/100  (lr: 2.83e-04)
+  Train Loss: 0.000493 | Val Loss (EMA): 0.000416 | Rel L2: 9.077572e-02 | data: 1.5736e-04 | cont: 1.8977e-04 | curl: 2.3221e-03 | Time: 365.12s
+
+Epoch 36/100  (lr: 2.83e-04)
+  Train Loss: 0.000471 | Val Loss (EMA): 0.000400 | Rel L2: 8.912536e-02 | data: 1.4801e-04 | cont: 1.9020e-04 | curl: 2.3275e-03 | Time: 368.89s
+  Saved best EMA weights
+
+Epoch 37/100  (lr: 2.83e-04)
+  Train Loss: 0.000502 | Val Loss (EMA): 0.000395 | Rel L2: 8.877098e-02 | data: 1.7081e-04 | cont: 1.8967e-04 | curl: 2.3266e-03 | Time: 371.51s
+  Saved best EMA weights
+
+Epoch 38/100  (lr: 2.83e-04)
+  Train Loss: 0.000479 | Val Loss (EMA): 0.000394 | Rel L2: 8.689888e-02 | data: 1.4951e-04 | cont: 1.9012e-04 | curl: 2.3274e-03 | Time: 369.88s
+  Saved best EMA weights
+
+Epoch 39/100  (lr: 2.83e-04)
+  Train Loss: 0.000480 | Val Loss (EMA): 0.000395 | Rel L2: 8.706514e-02 | data: 1.5400e-04 | cont: 1.8990e-04 | curl: 2.3282e-03 | Time: 371.38s
+
+Epoch 40/100  (lr: 2.83e-04)
+  Train Loss: 0.000465 | Val Loss (EMA): 0.000387 | Rel L2: 8.665991e-02 | data: 1.4595e-04 | cont: 1.8991e-04 | curl: 2.3317e-03 | Time: 367.92s
+  Saved best EMA weights
+
+Epoch 41/100  (lr: 2.83e-04)
+  Train Loss: 0.000455 | Val Loss (EMA): 0.000386 | Rel L2: 8.514684e-02 | data: 1.3773e-04 | cont: 1.9006e-04 | curl: 2.3315e-03 | Time: 368.95s
+  Saved best EMA weights
+
+Epoch 42/100  (lr: 2.83e-04)
+  Train Loss: 0.000462 | Val Loss (EMA): 0.000375 | Rel L2: 8.308631e-02 | data: 1.4249e-04 | cont: 1.8999e-04 | curl: 2.3328e-03 | Time: 368.12s
+  Saved best EMA weights
+
+Epoch 43/100  (lr: 2.83e-04)
+  Train Loss: 0.000451 | Val Loss (EMA): 0.000373 | Rel L2: 8.238763e-02 | data: 1.3541e-04 | cont: 1.9005e-04 | curl: 2.3335e-03 | Time: 373.01s
+  Saved best EMA weights
+
+Epoch 44/100  (lr: 2.83e-04)
+  Train Loss: 0.000461 | Val Loss (EMA): 0.000375 | Rel L2: 8.270720e-02 | data: 1.4504e-04 | cont: 1.8993e-04 | curl: 2.3319e-03 | Time: 377.85s
+
+Epoch 45/100  (lr: 2.83e-04)
+  Train Loss: 0.000467 | Val Loss (EMA): 0.000368 | Rel L2: 8.093383e-02 | data: 1.4232e-04 | cont: 1.9016e-04 | curl: 2.3287e-03 | Time: 365.52s
+  Saved best EMA weights
+
+Epoch 46/100  (lr: 2.83e-04)
+  Train Loss: 0.000431 | Val Loss (EMA): 0.000368 | Rel L2: 7.992606e-02 | data: 1.2409e-04 | cont: 1.9018e-04 | curl: 2.3367e-03 | Time: 374.46s
+  Saved best EMA weights
+
+Epoch 47/100  (lr: 2.83e-04)
+  Train Loss: 0.000437 | Val Loss (EMA): 0.000371 | Rel L2: 8.055717e-02 | data: 1.2196e-04 | cont: 1.9023e-04 | curl: 2.3358e-03 | Time: 370.25s
+
+Epoch 48/100  (lr: 2.83e-04)
+  Train Loss: 0.000428 | Val Loss (EMA): 0.000360 | Rel L2: 7.878266e-02 | data: 1.1508e-04 | cont: 1.9028e-04 | curl: 2.3374e-03 | Time: 365.36s
+  Saved best EMA weights
+
+Epoch 49/100  (lr: 2.83e-04)
+  Train Loss: 0.000452 | Val Loss (EMA): 0.000364 | Rel L2: 7.797325e-02 | data: 1.3824e-04 | cont: 1.9016e-04 | curl: 2.3339e-03 | Time: 365.57s
+
+Epoch 50/100  (lr: 2.83e-04)
+  Train Loss: 0.000411 | Val Loss (EMA): 0.000360 | Rel L2: 7.697428e-02 | data: 1.0746e-04 | cont: 1.9035e-04 | curl: 2.3407e-03 | Time: 366.53s
+
+Epoch 51/100  (lr: 2.83e-04)
+  Train Loss: 0.000437 | Val Loss (EMA): 0.000368 | Rel L2: 7.778376e-02 | data: 1.2399e-04 | cont: 1.9026e-04 | curl: 2.3373e-03 | Time: 368.98s
+
+Epoch 52/100  (lr: 2.83e-04)
+  Train Loss: 0.000434 | Val Loss (EMA): 0.000355 | Rel L2: 7.634613e-02 | data: 1.2064e-04 | cont: 1.9023e-04 | curl: 2.3366e-03 | Time: 368.83s
+  Saved best EMA weights
+
+Epoch 53/100  (lr: 2.82e-04)
+  Train Loss: 0.000405 | Val Loss (EMA): 0.000361 | Rel L2: 7.672543e-02 | data: 1.0048e-04 | cont: 1.9044e-04 | curl: 2.3401e-03 | Time: 366.64s
+
+Epoch 54/100  (lr: 2.80e-04)
+  Train Loss: 0.000413 | Val Loss (EMA): 0.000361 | Rel L2: 7.616719e-02 | data: 1.1000e-04 | cont: 1.9042e-04 | curl: 2.3404e-03 | Time: 365.83s
+
+Epoch 55/100  (lr: 2.78e-04)
+  Train Loss: 0.000415 | Val Loss (EMA): 0.000350 | Rel L2: 7.432085e-02 | data: 1.0792e-04 | cont: 1.9043e-04 | curl: 2.3394e-03 | Time: 367.69s
+  Saved best EMA weights
+
+Epoch 56/100  (lr: 2.76e-04)
+  Train Loss: 0.000409 | Val Loss (EMA): 0.000344 | Rel L2: 7.375703e-02 | data: 1.0676e-04 | cont: 1.9045e-04 | curl: 2.3414e-03 | Time: 374.19s
+  Saved best EMA weights
+
+Epoch 57/100  (lr: 2.73e-04)
+  Train Loss: 0.000408 | Val Loss (EMA): 0.000357 | Rel L2: 7.422941e-02 | data: 1.0440e-04 | cont: 1.9048e-04 | curl: 2.3396e-03 | Time: 367.97s
+
+Epoch 58/100  (lr: 2.69e-04)
+  Train Loss: 0.000401 | Val Loss (EMA): 0.000344 | Rel L2: 7.241512e-02 | data: 1.0327e-04 | cont: 1.9051e-04 | curl: 2.3400e-03 | Time: 368.31s
+  Saved best EMA weights
+
+Epoch 59/100  (lr: 2.65e-04)
+  Train Loss: 0.000397 | Val Loss (EMA): 0.000348 | Rel L2: 7.203799e-02 | data: 9.8479e-05 | cont: 1.9049e-04 | curl: 2.3395e-03 | Time: 367.16s
+
+Epoch 60/100  (lr: 2.61e-04)
+  Train Loss: 0.000383 | Val Loss (EMA): 0.000347 | Rel L2: 7.286947e-02 | data: 8.5944e-05 | cont: 1.9073e-04 | curl: 2.3441e-03 | Time: 368.12s
+
+Epoch 61/100  (lr: 2.56e-04)
+  Train Loss: 0.000380 | Val Loss (EMA): 0.000338 | Rel L2: 7.112738e-02 | data: 8.7105e-05 | cont: 1.9057e-04 | curl: 2.3450e-03 | Time: 373.44s
+  Saved best EMA weights
+
+Epoch 62/100  (lr: 2.51e-04)
+  Train Loss: 0.000374 | Val Loss (EMA): 0.000337 | Rel L2: 7.024982e-02 | data: 8.4797e-05 | cont: 1.9080e-04 | curl: 2.3450e-03 | Time: 369.89s
+  Saved best EMA weights
+
+Epoch 63/100  (lr: 2.45e-04)
+  Train Loss: 0.000394 | Val Loss (EMA): 0.000334 | Rel L2: 6.981895e-02 | data: 9.6114e-05 | cont: 1.9058e-04 | curl: 2.3433e-03 | Time: 367.38s
+  Saved best EMA weights
+
+Epoch 64/100  (lr: 2.38e-04)
+  Train Loss: 0.000378 | Val Loss (EMA): 0.000333 | Rel L2: 6.965983e-02 | data: 8.6424e-05 | cont: 1.9060e-04 | curl: 2.3439e-03 | Time: 370.47s
+  Saved best EMA weights
+
+Epoch 65/100  (lr: 2.32e-04)
+  Train Loss: 0.000370 | Val Loss (EMA): 0.000338 | Rel L2: 7.016101e-02 | data: 8.0995e-05 | cont: 1.9079e-04 | curl: 2.3457e-03 | Time: 368.28s
+
+Epoch 66/100  (lr: 2.25e-04)
+  Train Loss: 0.000373 | Val Loss (EMA): 0.000337 | Rel L2: 6.964900e-02 | data: 7.8443e-05 | cont: 1.9073e-04 | curl: 2.3454e-03 | Time: 375.03s
+
+Epoch 67/100  (lr: 2.17e-04)
+  Train Loss: 0.000384 | Val Loss (EMA): 0.000334 | Rel L2: 7.007991e-02 | data: 8.8540e-05 | cont: 1.9077e-04 | curl: 2.3425e-03 | Time: 368.99s
+
+Epoch 68/100  (lr: 2.10e-04)
+  Train Loss: 0.000371 | Val Loss (EMA): 0.000337 | Rel L2: 6.816654e-02 | data: 8.2976e-05 | cont: 1.9067e-04 | curl: 2.3441e-03 | Time: 365.72s
+
+Epoch 69/100  (lr: 2.02e-04)
+  Train Loss: 0.000353 | Val Loss (EMA): 0.000332 | Rel L2: 6.770250e-02 | data: 6.9566e-05 | cont: 1.9082e-04 | curl: 2.3454e-03 | Time: 367.35s
+  Saved best EMA weights
+
+Epoch 70/100  (lr: 1.94e-04)
+  Train Loss: 0.000361 | Val Loss (EMA): 0.000339 | Rel L2: 6.919350e-02 | data: 7.0697e-05 | cont: 1.9080e-04 | curl: 2.3456e-03 | Time: 369.61s
+
+Epoch 71/100  (lr: 1.85e-04)
+  Train Loss: 0.000348 | Val Loss (EMA): 0.000336 | Rel L2: 7.028339e-02 | data: 6.3759e-05 | cont: 1.9093e-04 | curl: 2.3478e-03 | Time: 369.98s
+
+Epoch 72/100  (lr: 1.77e-04)
+  Train Loss: 0.000337 | Val Loss (EMA): 0.000332 | Rel L2: 6.829791e-02 | data: 5.8665e-05 | cont: 1.9089e-04 | curl: 2.3502e-03 | Time: 366.81s
+
+Epoch 73/100  (lr: 1.68e-04)
+  Train Loss: 0.000348 | Val Loss (EMA): 0.000322 | Rel L2: 6.536147e-02 | data: 6.2560e-05 | cont: 1.9087e-04 | curl: 2.3489e-03 | Time: 371.35s
+  Saved best EMA weights
+
+Epoch 74/100  (lr: 1.60e-04)
+  Train Loss: 0.000343 | Val Loss (EMA): 0.000323 | Rel L2: 6.503045e-02 | data: 5.9555e-05 | cont: 1.9100e-04 | curl: 2.3484e-03 | Time: 367.84s
+
+Epoch 75/100  (lr: 1.51e-04)
+  Train Loss: 0.000346 | Val Loss (EMA): 0.000327 | Rel L2: 6.479686e-02 | data: 6.7098e-05 | cont: 1.9108e-04 | curl: 2.3473e-03 | Time: 366.96s
+
+Epoch 76/100  (lr: 1.42e-04)
+  Train Loss: 0.000335 | Val Loss (EMA): 0.000321 | Rel L2: 6.495671e-02 | data: 5.9272e-05 | cont: 1.9088e-04 | curl: 2.3475e-03 | Time: 371.93s
+  Saved best EMA weights
+
+Epoch 77/100  (lr: 1.33e-04)
+  Train Loss: 0.000330 | Val Loss (EMA): 0.000321 | Rel L2: 6.491162e-02 | data: 5.2733e-05 | cont: 1.9104e-04 | curl: 2.3508e-03 | Time: 368.25s
+
+Epoch 78/100  (lr: 1.24e-04)
+  Train Loss: 0.000340 | Val Loss (EMA): 0.000321 | Rel L2: 6.622604e-02 | data: 5.4473e-05 | cont: 1.9103e-04 | curl: 2.3509e-03 | Time: 372.74s
+
+Epoch 79/100  (lr: 1.16e-04)
+  Train Loss: 0.000331 | Val Loss (EMA): 0.000321 | Rel L2: 6.400868e-02 | data: 5.3135e-05 | cont: 1.9104e-04 | curl: 2.3496e-03 | Time: 369.19s
+
+Epoch 80/100  (lr: 1.07e-04)
+  Train Loss: 0.000331 | Val Loss (EMA): 0.000324 | Rel L2: 6.429709e-02 | data: 5.4358e-05 | cont: 1.9101e-04 | curl: 2.3474e-03 | Time: 366.97s
+
+Epoch 81/100  (lr: 9.84e-05)
+  Train Loss: 0.000327 | Val Loss (EMA): 0.000321 | Rel L2: 6.314799e-02 | data: 5.1982e-05 | cont: 1.9108e-04 | curl: 2.3484e-03 | Time: 367.35s
+
+Epoch 82/100  (lr: 9.00e-05)
+  Train Loss: 0.000323 | Val Loss (EMA): 0.000315 | Rel L2: 6.333888e-02 | data: 4.9921e-05 | cont: 1.9106e-04 | curl: 2.3504e-03 | Time: 367.36s
+  Saved best EMA weights
+
+Epoch 83/100  (lr: 8.19e-05)
+  Train Loss: 0.000329 | Val Loss (EMA): 0.000313 | Rel L2: 6.273341e-02 | data: 4.8480e-05 | cont: 1.9111e-04 | curl: 2.3509e-03 | Time: 366.93s
+  Saved best EMA weights
+
+Epoch 84/100  (lr: 7.40e-05)
+  Train Loss: 0.000319 | Val Loss (EMA): 0.000313 | Rel L2: 6.309970e-02 | data: 4.7140e-05 | cont: 1.9119e-04 | curl: 2.3518e-03 | Time: 368.05s
+
+Epoch 85/100  (lr: 6.64e-05)
+  Train Loss: 0.000322 | Val Loss (EMA): 0.000316 | Rel L2: 6.188382e-02 | data: 4.8824e-05 | cont: 1.9117e-04 | curl: 2.3504e-03 | Time: 369.89s
+
+Epoch 86/100  (lr: 5.91e-05)
+  Train Loss: 0.000326 | Val Loss (EMA): 0.000327 | Rel L2: 6.191744e-02 | data: 4.8696e-05 | cont: 1.9104e-04 | curl: 2.3479e-03 | Time: 368.13s
+
+Epoch 87/100  (lr: 5.21e-05)
+  Train Loss: 0.000325 | Val Loss (EMA): 0.000315 | Rel L2: 6.204276e-02 | data: 4.7565e-05 | cont: 1.9122e-04 | curl: 2.3484e-03 | Time: 370.30s
+
+Epoch 88/100  (lr: 4.55e-05)
+  Train Loss: 0.000321 | Val Loss (EMA): 0.000312 | Rel L2: 6.171985e-02 | data: 4.6542e-05 | cont: 1.9126e-04 | curl: 2.3482e-03 | Time: 370.37s
+  Saved best EMA weights
+
+Epoch 89/100  (lr: 3.92e-05)
+  Train Loss: 0.000320 | Val Loss (EMA): 0.000310 | Rel L2: 6.146344e-02 | data: 4.5814e-05 | cont: 1.9123e-04 | curl: 2.3488e-03 | Time: 370.66s
+  Saved best EMA weights
+
+Epoch 90/100  (lr: 3.33e-05)
+  Train Loss: 0.000320 | Val Loss (EMA): 0.000313 | Rel L2: 6.096896e-02 | data: 4.5501e-05 | cont: 1.9126e-04 | curl: 2.3482e-03 | Time: 368.23s
+
+Epoch 91/100  (lr: 2.79e-05)
+  Train Loss: 0.000316 | Val Loss (EMA): 0.000313 | Rel L2: 6.098259e-02 | data: 4.4834e-05 | cont: 1.9125e-04 | curl: 2.3483e-03 | Time: 370.21s
+
+Epoch 92/100  (lr: 2.29e-05)
+  Train Loss: 0.000317 | Val Loss (EMA): 0.000313 | Rel L2: 6.092698e-02 | data: 4.5535e-05 | cont: 1.9121e-04 | curl: 2.3476e-03 | Time: 369.28s
+
+Epoch 93/100  (lr: 1.84e-05)
+  Train Loss: 0.000314 | Val Loss (EMA): 0.000312 | Rel L2: 6.082175e-02 | data: 4.4348e-05 | cont: 1.9117e-04 | curl: 2.3479e-03 | Time: 371.93s
+
+Epoch 94/100  (lr: 1.44e-05)
+  Train Loss: 0.000312 | Val Loss (EMA): 0.000315 | Rel L2: 6.096116e-02 | data: 4.3424e-05 | cont: 1.9110e-04 | curl: 2.3488e-03 | Time: 366.55s
+
+Epoch 95/100  (lr: 1.09e-05)
+  Train Loss: 0.000311 | Val Loss (EMA): 0.000315 | Rel L2: 6.119836e-02 | data: 4.2997e-05 | cont: 1.9117e-04 | curl: 2.3493e-03 | Time: 366.51s
+
+Epoch 96/100  (lr: 7.90e-06)
+  Train Loss: 0.000311 | Val Loss (EMA): 0.000308 | Rel L2: 6.107530e-02 | data: 4.2878e-05 | cont: 1.9120e-04 | curl: 2.3501e-03 | Time: 364.99s
+  Saved best EMA weights
+
+Epoch 97/100  (lr: 5.43e-06)
+  Train Loss: 0.000310 | Val Loss (EMA): 0.000308 | Rel L2: 6.103121e-02 | data: 4.2668e-05 | cont: 1.9103e-04 | curl: 2.3508e-03 | Time: 368.14s
+  Saved best EMA weights
+
+Epoch 98/100  (lr: 3.50e-06)
+  Train Loss: 0.000310 | Val Loss (EMA): 0.000308 | Rel L2: 6.106879e-02 | data: 4.2561e-05 | cont: 1.9122e-04 | curl: 2.3505e-03 | Time: 368.72s
+
+Epoch 99/100  (lr: 2.11e-06)
+  Train Loss: 0.000310 | Val Loss (EMA): 0.000308 | Rel L2: 6.114698e-02 | data: 4.2512e-05 | cont: 1.9123e-04 | curl: 2.3510e-03 | Time: 374.92s
+
+Epoch 100/100  (lr: 1.28e-06)
+  Train Loss: 0.000309 | Val Loss (EMA): 0.000309 | Rel L2: 6.116581e-02 | data: 4.2410e-05 | cont: 1.9119e-04 | curl: 2.3505e-03 | Time: 378.53s
+
+Done. Best Val (EMA): 0.000308

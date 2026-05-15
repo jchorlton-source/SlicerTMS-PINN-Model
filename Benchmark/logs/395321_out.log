@@ -1,0 +1,395 @@
+Master:    k178
+Nodes:     k178
+Tasks:     2
+CPUs/task: 16
+[INFO] Using 2 GPUs
+[INFO] base_channels: 32
+[INFO] Effective batch size: 8
+[INFO] Effective LR: 2.83e-04
+[INFO] LR schedule: warmup 5 → plateau 45 → cosine 50  (total 100)
+[INFO] Matched 3844 complete samples (0 skipped)
+[INFO] Train samples: 3075 | Val samples: 769
+[INFO] Starting training from scratch
+
+Epoch 1/100  (lr: 2.83e-05)
+  Train Loss: 0.076350 | Val Loss (EMA): 0.197301 | Rel L2: 2.593399e+00 | Time: 388.68s
+  Saved best EMA weights
+
+Epoch 2/100  (lr: 7.92e-05)
+  Train Loss: 0.032813 | Val Loss (EMA): 0.068213 | Rel L2: 1.078719e+00 | Time: 373.54s
+  Saved best EMA weights
+
+Epoch 3/100  (lr: 1.30e-04)
+  Train Loss: 0.023619 | Val Loss (EMA): 0.038108 | Rel L2: 8.058193e-01 | Time: 361.25s
+  Saved best EMA weights
+
+Epoch 4/100  (lr: 1.81e-04)
+  Train Loss: 0.020626 | Val Loss (EMA): 0.025498 | Rel L2: 7.231743e-01 | Time: 361.47s
+  Saved best EMA weights
+
+Epoch 5/100  (lr: 2.32e-04)
+  Train Loss: 0.018553 | Val Loss (EMA): 0.019726 | Rel L2: 6.460046e-01 | Time: 377.17s
+  Saved best EMA weights
+
+Epoch 6/100  (lr: 2.83e-04)
+  Train Loss: 0.017579 | Val Loss (EMA): 0.016561 | Rel L2: 5.631622e-01 | Time: 360.14s
+  Saved best EMA weights
+
+Epoch 7/100  (lr: 2.83e-04)
+  Train Loss: 0.015108 | Val Loss (EMA): 0.014427 | Rel L2: 4.886001e-01 | Time: 364.15s
+  Saved best EMA weights
+
+Epoch 8/100  (lr: 2.83e-04)
+  Train Loss: 0.013889 | Val Loss (EMA): 0.012597 | Rel L2: 4.248224e-01 | Time: 365.72s
+  Saved best EMA weights
+
+Epoch 9/100  (lr: 2.83e-04)
+  Train Loss: 0.013199 | Val Loss (EMA): 0.011435 | Rel L2: 3.754539e-01 | Time: 371.44s
+  Saved best EMA weights
+
+Epoch 10/100  (lr: 2.83e-04)
+  Train Loss: 0.012153 | Val Loss (EMA): 0.010487 | Rel L2: 3.371498e-01 | Time: 372.72s
+  Saved best EMA weights
+
+Epoch 11/100  (lr: 2.83e-04)
+  Train Loss: 0.011796 | Val Loss (EMA): 0.009724 | Rel L2: 3.051818e-01 | Time: 367.48s
+  Saved best EMA weights
+
+Epoch 12/100  (lr: 2.83e-04)
+  Train Loss: 0.011324 | Val Loss (EMA): 0.008996 | Rel L2: 2.800954e-01 | Time: 363.99s
+  Saved best EMA weights
+
+Epoch 13/100  (lr: 2.83e-04)
+  Train Loss: 0.010829 | Val Loss (EMA): 0.008681 | Rel L2: 2.618048e-01 | Time: 367.56s
+  Saved best EMA weights
+
+Epoch 14/100  (lr: 2.83e-04)
+  Train Loss: 0.010636 | Val Loss (EMA): 0.008175 | Rel L2: 2.450119e-01 | Time: 365.75s
+  Saved best EMA weights
+
+Epoch 15/100  (lr: 2.83e-04)
+  Train Loss: 0.010284 | Val Loss (EMA): 0.007847 | Rel L2: 2.321868e-01 | Time: 363.20s
+  Saved best EMA weights
+
+Epoch 16/100  (lr: 2.83e-04)
+  Train Loss: 0.010192 | Val Loss (EMA): 0.007623 | Rel L2: 2.223717e-01 | Time: 373.02s
+  Saved best EMA weights
+
+Epoch 17/100  (lr: 2.83e-04)
+  Train Loss: 0.009469 | Val Loss (EMA): 0.007409 | Rel L2: 2.138688e-01 | Time: 365.26s
+  Saved best EMA weights
+
+Epoch 18/100  (lr: 2.83e-04)
+  Train Loss: 0.009530 | Val Loss (EMA): 0.007122 | Rel L2: 2.044495e-01 | Time: 371.12s
+  Saved best EMA weights
+
+Epoch 19/100  (lr: 2.83e-04)
+  Train Loss: 0.009360 | Val Loss (EMA): 0.006988 | Rel L2: 1.986186e-01 | Time: 365.28s
+  Saved best EMA weights
+
+Epoch 20/100  (lr: 2.83e-04)
+  Train Loss: 0.008936 | Val Loss (EMA): 0.006780 | Rel L2: 1.924376e-01 | Time: 374.32s
+  Saved best EMA weights
+
+Epoch 21/100  (lr: 2.83e-04)
+  Train Loss: 0.008750 | Val Loss (EMA): 0.006616 | Rel L2: 1.870052e-01 | Time: 360.93s
+  Saved best EMA weights
+
+Epoch 22/100  (lr: 2.83e-04)
+  Train Loss: 0.008414 | Val Loss (EMA): 0.006348 | Rel L2: 1.813522e-01 | Time: 369.51s
+  Saved best EMA weights
+
+Epoch 23/100  (lr: 2.83e-04)
+  Train Loss: 0.008173 | Val Loss (EMA): 0.006161 | Rel L2: 1.758229e-01 | Time: 363.33s
+  Saved best EMA weights
+
+Epoch 24/100  (lr: 2.83e-04)
+  Train Loss: 0.008359 | Val Loss (EMA): 0.006040 | Rel L2: 1.714683e-01 | Time: 378.61s
+  Saved best EMA weights
+
+Epoch 25/100  (lr: 2.83e-04)
+  Train Loss: 0.007983 | Val Loss (EMA): 0.005933 | Rel L2: 1.682499e-01 | Time: 363.75s
+  Saved best EMA weights
+
+Epoch 26/100  (lr: 2.83e-04)
+  Train Loss: 0.007577 | Val Loss (EMA): 0.005771 | Rel L2: 1.642037e-01 | Time: 368.48s
+  Saved best EMA weights
+
+Epoch 27/100  (lr: 2.83e-04)
+  Train Loss: 0.007748 | Val Loss (EMA): 0.005618 | Rel L2: 1.607307e-01 | Time: 367.18s
+  Saved best EMA weights
+
+Epoch 28/100  (lr: 2.83e-04)
+  Train Loss: 0.007442 | Val Loss (EMA): 0.005517 | Rel L2: 1.571539e-01 | Time: 375.84s
+  Saved best EMA weights
+
+Epoch 29/100  (lr: 2.83e-04)
+  Train Loss: 0.007439 | Val Loss (EMA): 0.005419 | Rel L2: 1.548996e-01 | Time: 363.35s
+  Saved best EMA weights
+
+Epoch 30/100  (lr: 2.83e-04)
+  Train Loss: 0.007138 | Val Loss (EMA): 0.005313 | Rel L2: 1.519338e-01 | Time: 365.26s
+  Saved best EMA weights
+
+Epoch 31/100  (lr: 2.83e-04)
+  Train Loss: 0.006982 | Val Loss (EMA): 0.005181 | Rel L2: 1.489218e-01 | Time: 365.39s
+  Saved best EMA weights
+
+Epoch 32/100  (lr: 2.83e-04)
+  Train Loss: 0.007006 | Val Loss (EMA): 0.005145 | Rel L2: 1.465336e-01 | Time: 364.76s
+  Saved best EMA weights
+
+Epoch 33/100  (lr: 2.83e-04)
+  Train Loss: 0.006818 | Val Loss (EMA): 0.005031 | Rel L2: 1.446851e-01 | Time: 362.68s
+  Saved best EMA weights
+
+Epoch 34/100  (lr: 2.83e-04)
+  Train Loss: 0.006578 | Val Loss (EMA): 0.004956 | Rel L2: 1.423883e-01 | Time: 366.00s
+  Saved best EMA weights
+
+Epoch 35/100  (lr: 2.83e-04)
+  Train Loss: 0.006638 | Val Loss (EMA): 0.004904 | Rel L2: 1.403732e-01 | Time: 367.00s
+  Saved best EMA weights
+
+Epoch 36/100  (lr: 2.83e-04)
+  Train Loss: 0.006563 | Val Loss (EMA): 0.004824 | Rel L2: 1.386164e-01 | Time: 366.32s
+  Saved best EMA weights
+
+Epoch 37/100  (lr: 2.83e-04)
+  Train Loss: 0.006738 | Val Loss (EMA): 0.004765 | Rel L2: 1.380583e-01 | Time: 377.87s
+  Saved best EMA weights
+
+Epoch 38/100  (lr: 2.83e-04)
+  Train Loss: 0.006292 | Val Loss (EMA): 0.004714 | Rel L2: 1.368725e-01 | Time: 373.99s
+  Saved best EMA weights
+
+Epoch 39/100  (lr: 2.83e-04)
+  Train Loss: 0.006355 | Val Loss (EMA): 0.004721 | Rel L2: 1.352919e-01 | Time: 362.98s
+
+Epoch 40/100  (lr: 2.83e-04)
+  Train Loss: 0.006190 | Val Loss (EMA): 0.004586 | Rel L2: 1.335812e-01 | Time: 363.40s
+  Saved best EMA weights
+
+Epoch 41/100  (lr: 2.83e-04)
+  Train Loss: 0.006250 | Val Loss (EMA): 0.004533 | Rel L2: 1.320744e-01 | Time: 362.84s
+  Saved best EMA weights
+
+Epoch 42/100  (lr: 2.83e-04)
+  Train Loss: 0.005923 | Val Loss (EMA): 0.004472 | Rel L2: 1.313992e-01 | Time: 366.63s
+  Saved best EMA weights
+
+Epoch 43/100  (lr: 2.83e-04)
+  Train Loss: 0.005989 | Val Loss (EMA): 0.004449 | Rel L2: 1.301287e-01 | Time: 363.11s
+  Saved best EMA weights
+
+Epoch 44/100  (lr: 2.83e-04)
+  Train Loss: 0.006110 | Val Loss (EMA): 0.004414 | Rel L2: 1.289504e-01 | Time: 374.66s
+  Saved best EMA weights
+
+Epoch 45/100  (lr: 2.83e-04)
+  Train Loss: 0.005665 | Val Loss (EMA): 0.004354 | Rel L2: 1.275262e-01 | Time: 363.85s
+  Saved best EMA weights
+
+Epoch 46/100  (lr: 2.83e-04)
+  Train Loss: 0.005771 | Val Loss (EMA): 0.004324 | Rel L2: 1.266056e-01 | Time: 378.20s
+  Saved best EMA weights
+
+Epoch 47/100  (lr: 2.83e-04)
+  Train Loss: 0.005737 | Val Loss (EMA): 0.004268 | Rel L2: 1.246771e-01 | Time: 363.14s
+  Saved best EMA weights
+
+Epoch 48/100  (lr: 2.83e-04)
+  Train Loss: 0.005552 | Val Loss (EMA): 0.004305 | Rel L2: 1.239167e-01 | Time: 373.67s
+
+Epoch 49/100  (lr: 2.83e-04)
+  Train Loss: 0.005696 | Val Loss (EMA): 0.004179 | Rel L2: 1.222869e-01 | Time: 364.19s
+  Saved best EMA weights
+
+Epoch 50/100  (lr: 2.83e-04)
+  Train Loss: 0.005388 | Val Loss (EMA): 0.004175 | Rel L2: 1.211891e-01 | Time: 370.61s
+  Saved best EMA weights
+
+Epoch 51/100  (lr: 2.83e-04)
+  Train Loss: 0.005592 | Val Loss (EMA): 0.004149 | Rel L2: 1.201096e-01 | Time: 365.10s
+  Saved best EMA weights
+
+Epoch 52/100  (lr: 2.83e-04)
+  Train Loss: 0.005482 | Val Loss (EMA): 0.004093 | Rel L2: 1.189420e-01 | Time: 368.79s
+  Saved best EMA weights
+
+Epoch 53/100  (lr: 2.82e-04)
+  Train Loss: 0.005408 | Val Loss (EMA): 0.004072 | Rel L2: 1.182569e-01 | Time: 366.56s
+  Saved best EMA weights
+
+Epoch 54/100  (lr: 2.80e-04)
+  Train Loss: 0.005282 | Val Loss (EMA): 0.004020 | Rel L2: 1.167259e-01 | Time: 366.25s
+  Saved best EMA weights
+
+Epoch 55/100  (lr: 2.78e-04)
+  Train Loss: 0.005411 | Val Loss (EMA): 0.004012 | Rel L2: 1.161427e-01 | Time: 370.94s
+  Saved best EMA weights
+
+Epoch 56/100  (lr: 2.76e-04)
+  Train Loss: 0.005241 | Val Loss (EMA): 0.003979 | Rel L2: 1.152081e-01 | Time: 365.16s
+  Saved best EMA weights
+
+Epoch 57/100  (lr: 2.73e-04)
+  Train Loss: 0.005093 | Val Loss (EMA): 0.004010 | Rel L2: 1.151147e-01 | Time: 368.86s
+
+Epoch 58/100  (lr: 2.69e-04)
+  Train Loss: 0.005057 | Val Loss (EMA): 0.003887 | Rel L2: 1.133987e-01 | Time: 365.71s
+  Saved best EMA weights
+
+Epoch 59/100  (lr: 2.65e-04)
+  Train Loss: 0.004911 | Val Loss (EMA): 0.003896 | Rel L2: 1.129085e-01 | Time: 374.64s
+
+Epoch 60/100  (lr: 2.61e-04)
+  Train Loss: 0.005131 | Val Loss (EMA): 0.003875 | Rel L2: 1.114919e-01 | Time: 377.52s
+  Saved best EMA weights
+
+Epoch 61/100  (lr: 2.56e-04)
+  Train Loss: 0.004848 | Val Loss (EMA): 0.003853 | Rel L2: 1.111225e-01 | Time: 368.52s
+  Saved best EMA weights
+
+Epoch 62/100  (lr: 2.51e-04)
+  Train Loss: 0.004860 | Val Loss (EMA): 0.003814 | Rel L2: 1.103821e-01 | Time: 368.03s
+  Saved best EMA weights
+
+Epoch 63/100  (lr: 2.45e-04)
+  Train Loss: 0.004829 | Val Loss (EMA): 0.003789 | Rel L2: 1.090994e-01 | Time: 366.12s
+  Saved best EMA weights
+
+Epoch 64/100  (lr: 2.38e-04)
+  Train Loss: 0.004640 | Val Loss (EMA): 0.003733 | Rel L2: 1.083063e-01 | Time: 363.91s
+  Saved best EMA weights
+
+Epoch 65/100  (lr: 2.32e-04)
+  Train Loss: 0.004727 | Val Loss (EMA): 0.003737 | Rel L2: 1.078272e-01 | Time: 376.43s
+
+Epoch 66/100  (lr: 2.25e-04)
+  Train Loss: 0.004420 | Val Loss (EMA): 0.003735 | Rel L2: 1.069221e-01 | Time: 366.10s
+
+Epoch 67/100  (lr: 2.17e-04)
+  Train Loss: 0.004441 | Val Loss (EMA): 0.003663 | Rel L2: 1.057874e-01 | Time: 366.42s
+  Saved best EMA weights
+
+Epoch 68/100  (lr: 2.10e-04)
+  Train Loss: 0.004525 | Val Loss (EMA): 0.003652 | Rel L2: 1.044068e-01 | Time: 363.16s
+  Saved best EMA weights
+
+Epoch 69/100  (lr: 2.02e-04)
+  Train Loss: 0.004323 | Val Loss (EMA): 0.003600 | Rel L2: 1.034010e-01 | Time: 364.40s
+  Saved best EMA weights
+
+Epoch 70/100  (lr: 1.94e-04)
+  Train Loss: 0.004111 | Val Loss (EMA): 0.003646 | Rel L2: 1.027962e-01 | Time: 373.78s
+
+Epoch 71/100  (lr: 1.85e-04)
+  Train Loss: 0.004051 | Val Loss (EMA): 0.003577 | Rel L2: 1.012392e-01 | Time: 364.71s
+  Saved best EMA weights
+
+Epoch 72/100  (lr: 1.77e-04)
+  Train Loss: 0.004198 | Val Loss (EMA): 0.003585 | Rel L2: 1.007432e-01 | Time: 366.51s
+
+Epoch 73/100  (lr: 1.68e-04)
+  Train Loss: 0.004104 | Val Loss (EMA): 0.003518 | Rel L2: 9.961387e-02 | Time: 369.12s
+  Saved best EMA weights
+
+Epoch 74/100  (lr: 1.60e-04)
+  Train Loss: 0.003822 | Val Loss (EMA): 0.003493 | Rel L2: 9.887165e-02 | Time: 369.27s
+  Saved best EMA weights
+
+Epoch 75/100  (lr: 1.51e-04)
+  Train Loss: 0.003894 | Val Loss (EMA): 0.003490 | Rel L2: 9.765166e-02 | Time: 364.35s
+  Saved best EMA weights
+
+Epoch 76/100  (lr: 1.42e-04)
+  Train Loss: 0.003803 | Val Loss (EMA): 0.003436 | Rel L2: 9.632442e-02 | Time: 368.68s
+  Saved best EMA weights
+
+Epoch 77/100  (lr: 1.33e-04)
+  Train Loss: 0.003693 | Val Loss (EMA): 0.003415 | Rel L2: 9.549433e-02 | Time: 371.04s
+  Saved best EMA weights
+
+Epoch 78/100  (lr: 1.24e-04)
+  Train Loss: 0.003719 | Val Loss (EMA): 0.003409 | Rel L2: 9.453378e-02 | Time: 368.00s
+  Saved best EMA weights
+
+Epoch 79/100  (lr: 1.16e-04)
+  Train Loss: 0.003618 | Val Loss (EMA): 0.003386 | Rel L2: 9.371422e-02 | Time: 363.47s
+  Saved best EMA weights
+
+Epoch 80/100  (lr: 1.07e-04)
+  Train Loss: 0.003633 | Val Loss (EMA): 0.003364 | Rel L2: 9.282868e-02 | Time: 366.97s
+  Saved best EMA weights
+
+Epoch 81/100  (lr: 9.84e-05)
+  Train Loss: 0.003496 | Val Loss (EMA): 0.003345 | Rel L2: 9.210226e-02 | Time: 372.00s
+  Saved best EMA weights
+
+Epoch 82/100  (lr: 9.00e-05)
+  Train Loss: 0.003490 | Val Loss (EMA): 0.003317 | Rel L2: 9.120465e-02 | Time: 378.36s
+  Saved best EMA weights
+
+Epoch 83/100  (lr: 8.19e-05)
+  Train Loss: 0.003476 | Val Loss (EMA): 0.003354 | Rel L2: 9.111676e-02 | Time: 375.79s
+
+Epoch 84/100  (lr: 7.40e-05)
+  Train Loss: 0.003376 | Val Loss (EMA): 0.003315 | Rel L2: 9.016660e-02 | Time: 368.57s
+  Saved best EMA weights
+
+Epoch 85/100  (lr: 6.64e-05)
+  Train Loss: 0.003366 | Val Loss (EMA): 0.003288 | Rel L2: 8.927855e-02 | Time: 364.89s
+  Saved best EMA weights
+
+Epoch 86/100  (lr: 5.91e-05)
+  Train Loss: 0.003353 | Val Loss (EMA): 0.003265 | Rel L2: 8.858484e-02 | Time: 363.41s
+  Saved best EMA weights
+
+Epoch 87/100  (lr: 5.21e-05)
+  Train Loss: 0.003280 | Val Loss (EMA): 0.003270 | Rel L2: 8.836460e-02 | Time: 366.01s
+
+Epoch 88/100  (lr: 4.55e-05)
+  Train Loss: 0.003230 | Val Loss (EMA): 0.003294 | Rel L2: 8.803376e-02 | Time: 380.98s
+
+Epoch 89/100  (lr: 3.92e-05)
+  Train Loss: 0.003196 | Val Loss (EMA): 0.003245 | Rel L2: 8.705390e-02 | Time: 365.07s
+  Saved best EMA weights
+
+Epoch 90/100  (lr: 3.33e-05)
+  Train Loss: 0.003183 | Val Loss (EMA): 0.003241 | Rel L2: 8.652393e-02 | Time: 364.87s
+  Saved best EMA weights
+
+Epoch 91/100  (lr: 2.79e-05)
+  Train Loss: 0.003152 | Val Loss (EMA): 0.003266 | Rel L2: 8.634110e-02 | Time: 362.92s
+
+Epoch 92/100  (lr: 2.29e-05)
+  Train Loss: 0.003160 | Val Loss (EMA): 0.003266 | Rel L2: 8.581874e-02 | Time: 368.54s
+
+Epoch 93/100  (lr: 1.84e-05)
+  Train Loss: 0.003143 | Val Loss (EMA): 0.003252 | Rel L2: 8.530002e-02 | Time: 363.55s
+
+Epoch 94/100  (lr: 1.44e-05)
+  Train Loss: 0.003133 | Val Loss (EMA): 0.003176 | Rel L2: 8.447505e-02 | Time: 376.18s
+  Saved best EMA weights
+
+Epoch 95/100  (lr: 1.09e-05)
+  Train Loss: 0.003118 | Val Loss (EMA): 0.003178 | Rel L2: 8.427139e-02 | Time: 374.16s
+
+Epoch 96/100  (lr: 7.90e-06)
+  Train Loss: 0.003102 | Val Loss (EMA): 0.003207 | Rel L2: 8.432782e-02 | Time: 364.69s
+
+Epoch 97/100  (lr: 5.43e-06)
+  Train Loss: 0.003089 | Val Loss (EMA): 0.003184 | Rel L2: 8.404704e-02 | Time: 362.31s
+
+Epoch 98/100  (lr: 3.50e-06)
+  Train Loss: 0.003086 | Val Loss (EMA): 0.003188 | Rel L2: 8.389540e-02 | Time: 363.19s
+
+Epoch 99/100  (lr: 2.11e-06)
+  Train Loss: 0.003083 | Val Loss (EMA): 0.003189 | Rel L2: 8.376052e-02 | Time: 366.59s
+
+Epoch 100/100  (lr: 1.28e-06)
+  Train Loss: 0.003081 | Val Loss (EMA): 0.003152 | Rel L2: 8.337869e-02 | Time: 373.21s
+  Saved best EMA weights
+
+Done. Best Val (EMA): 0.003152
