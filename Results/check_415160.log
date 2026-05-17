@@ -1,0 +1,38 @@
+/mmfs1/data/group/ems020/jchorlton/SlicerTMS-PINN-Model/Benchmark/check.py:60: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(ckpt_path, map_location=device)
+[INFO] Matched 3844 complete samples (0 skipped)
+[INFO] Train samples: 3075 | Val samples: 769
+
+Val set size: 769 samples
+(Compare this against '[INFO] Val samples: N' in each training log -- if they don't all match, the splits drifted.)
+
+=========================================================
+Model: benchmark
+  ckpt: /scratch/ems020/jchorlton/benchmark/checkpoints_base32/best_model_ema.pth
+  weights md5 (first 12): 346230088f32
+  dataset-level rel L2: 0.0430  <-- compare with training CSV
+  per-sample mean:      0.0439
+  per-sample median:    0.0430
+  per-sample min/max:   0.0354 / 0.1530
+  per-sample std:       0.0069
+
+=========================================================
+Model: run_a_mse
+  ckpt: /scratch/ems020/jchorlton/benchmark/PINN_control/best_model_ema.pth
+  weights md5 (first 12): b9434636e482
+  dataset-level rel L2: 0.0552  <-- compare with training CSV
+  per-sample mean:      0.0584
+  per-sample median:    0.0571
+  per-sample min/max:   0.0440 / 0.1656
+  per-sample std:       0.0099
+
+=========================================================
+Model: run_b_hybrid
+  ckpt: /scratch/ems020/jchorlton/benchmark/PINN_hybrid/best_model_ema.pth
+  weights md5 (first 12): 8b47360be891
+  dataset-level rel L2: 0.0592  <-- compare with training CSV
+  per-sample mean:      0.0638
+  per-sample median:    0.0633
+  per-sample min/max:   0.0451 / 0.1757
+  per-sample std:       0.0118
+
